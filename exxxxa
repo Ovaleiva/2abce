@@ -86,3 +86,23 @@ for i in range(len(newlist)):
 print("Lista de personajes de Avengers en la nueva lista corregida:")
 for personaje in newlist:
     print(personaje)
+
+listaaux = [
+    ("Black Cat", "Felicia Hardy", "SpiderMan", 2021),
+    ("Hulk", "Bruce Banner", "Avengers", 2012),
+    ("Rocket Racoonn", "Bradley Cooper", "Guardians de la Galaxia", 2014),
+    ("Loki", "Tom Hiddleston", "Thor", 2011)
+]
+
+for personaje, actor, pelicula, año in listaaux:
+    encontrado = False
+    for p in avengers:
+        if p[0] == personaje:
+            encontrado = True
+            break
+    if not encontrado:
+        avengers.append((personaje, actor, pelicula, año))
+
+print("Lista de personajes de Avengers con los personajes de la lista auxiliar agregados:")
+for personaje in avengers:
+    print(personaje)
