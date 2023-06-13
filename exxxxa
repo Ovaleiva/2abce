@@ -81,7 +81,6 @@ newlist = [("Vlanck Widow", "", "Avengers", 2010),
 for i in range(len(newlist)):
     if newlist[i][0] == "Vlanck Widow":
         newlist[i] = ("Black Widow", newlist[i][1], newlist[i][2], newlist[i][3])
-        break
 
 print("Lista de personajes de Avengers en la nueva lista corregida:")
 for personaje in newlist:
@@ -99,10 +98,13 @@ for personaje, actor, pelicula, año in listaaux:
     for p in avengers:
         if p[0] == personaje:
             encontrado = True
-            break
     if not encontrado:
         avengers.append((personaje, actor, pelicula, año))
 
 print("Lista de personajes de Avengers con los personajes de la lista auxiliar agregados:")
 for personaje in avengers:
     print(personaje)
+
+#PUNTO H NO ENTENDI, YA TENGO MAS DE 20 SUPERHÉROES EN LA LISTA (sumando los personajes de la lista auxiliar).
+
+
